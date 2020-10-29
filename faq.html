@@ -1,0 +1,71 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" integrity="sha512-Q5FghnpxjBPgZOw6Qh2ZQ8a9fXdMeAI/PndxnLx9eCbj+Fm973p23OuRv2sx7FZyVD9mZaBs7ty1UuGxRqDzOw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">    
+</head> 
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="faq.html">Contact</a>
+                <ul class="sub-menu">
+                    <li><a href="question.html">よくある質問</a></li>
+                    <li><a href="faq.html">お問い合わせ</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="contact-container">
+        <h1 class="brand"><span>ABC</span> Company</h1>
+        <div class="wrapper">
+            <div class="company-info">
+                <h3>ABC Company</h3>
+                <ul>
+                    <li><i class="fa fa-road"></i>福岡県福岡市南区塩原1－16－19</li>
+                    <li><i class="fa fa-phone"></i> (555) 555 555</li>
+                    <li><i class="fa fa-envelope"></i> ABC@email.com</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>お問い合わせ</h3>
+                <div class="alert">送信されました。</div>
+                <form id="contactForm">
+                    <p>
+                        <label>氏名</label>
+                        <input type="text" name="name" id="name" required>
+                    </p>
+                    <p>
+                        <label>会社名</label>
+                        <input type="text" name="company" id="company" >
+                    </p>
+                    <p>
+                        <label>メールアドレス</label>
+                        <input type="email" name="email" id="email" required>
+                    </p>
+                    <p>
+                        <label>電話番号</label>
+                        <input type="text" name="phone" id="phone">
+                    </p>
+                    <p class="full">
+                        <label>質問内容</label>
+                        <textarea name="message" rows="5" id="message"></textarea>
+                    </p>
+                    <p class="full">
+                        <button type="submit">Summit</button>
+                    </p>
+                </form>
+            </div>
+    
+        </div>
+
+        
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>  
+    <script src="faq.js"></script>
+</body>   
+</html>

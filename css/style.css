@@ -79,8 +79,9 @@ a:visited {
 
 .showcase{
     grid-area: showcase;
-    min-height: 200px;
-    background: url(img/showcase.jpg);
+    min-height: 500px;
+    min-width: 650px;
+    background: url(../img/showcase.jpg);
     background-size: cover;
     background-position: center;
     padding: 2rem;
@@ -89,7 +90,6 @@ a:visited {
     align-items: start;
     justify-content: center;
     box-shadow:  0 0 20px 0 rgba(72, 94, 116, 0.7);
-    margin-right: 10px;
     margin-bottom: 10px;
 }
 
